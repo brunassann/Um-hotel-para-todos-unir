@@ -1,0 +1,81 @@
+/* ----------------------------fontes---------------------------*/
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/* --------------------barrinha de rolagem----------------------*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #ffd3d3;
+    border-radius: 13px;
+} 
+::-webkit-scrollbar-thumb {
+    background-color:#ff4f4f;
+    border-radius: 10px;
+    border: 1px solid #ffd3d3;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    background-image: url(../imagem/logo5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 50px;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff4f4f;;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: relative;
+    padding: 8px 0; 
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 0;
+    height: 3px;
+    background-color: #ff4f4f;;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 105%;
+}
+
+h1{
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: "Poppins";
+    color: #ff4f4f;
+    text-transform: uppercase;
+}
